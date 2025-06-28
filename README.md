@@ -83,3 +83,27 @@ Given the regulated financial context, a hybrid strategy is optimal:
 This approach balances regulatory requirements with competitive performance while building organizational capability for advanced risk modeling.
 
 ## Project Structure
+<pre>
+credit-risk-model/
+├── .github/workflows/ci.yml         # CI/CD pipeline configuration
+├── data/                            # Data directory (ignored by git)
+│   ├── raw/                         # Raw data files
+│   └── processed/                   # Processed data files
+├── notebooks/
+│   └── 1.0-eda.ipynb                # Exploratory data analysis notebook
+├── src/
+│   ├── __init__.py
+│   ├── data_processing.py           # Feature engineering scripts
+│   ├── train.py                     # Model training script
+│   ├── predict.py                   # Inference script
+│   └── api/
+│       ├── main.py                  # FastAPI application
+│       └── pydantic_models.py       # API data models
+├── tests/
+│   └── test_data_processing.py      # Unit tests
+├── Dockerfile                       # Docker configuration
+├── docker-compose.yml               # Docker compose for services
+├── requirements.txt                 # Python dependencies
+├── .gitignore                       # Git ignore rules
+└── README.md                        # Project documentation
+</pre>
